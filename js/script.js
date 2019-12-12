@@ -18,7 +18,7 @@ function tieGame() {
     }
 }
 
-function Win(tileId1, tileId2, tileId3) {
+function win(tileId1, tileId2, tileId3) {
     if ($(tileId1).html() === player && $(tileId2).html() === player && $(tileId3).html() === player) {
         $("h1").text(player + " wins!");
         gameIsOver = true;
